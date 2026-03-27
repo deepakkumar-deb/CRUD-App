@@ -4,10 +4,13 @@ $insert = false;
 $update = false;
 $delete = false;
 
-$servername = "your-railway-host";
-$username = "your-railway-user";
-$password = "your-railway-password";
-$database = "your-railway-db";
+$servername = "gondola.proxy.rlwy.net";
+$username = "root";
+$password = "YOUR_PASSWORD";  // jo stars ke jagah hai
+$database = "railway";
+$port = 39137;
+
+$conn = mysqli_connect($servername, $username, $password, $database, $port);
 
 $conn = mysqli_connect($servername, $username, $password, $database);
 
